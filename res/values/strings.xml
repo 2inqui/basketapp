@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, BasketballActivity!</string>
+    <string name="app_name">Basketball</string>
+    <string name="equipo">Equipo</string>
+    <string name="jugadores">Jugadores</string>
+    <string name="partidos">Partidos</string>
+    <string name="agregarEquipo">Agregar</string>
+    <string name="editarEquipo">Editar</string>
+    <string name="nombre_equipo">Nombre equipo</string>
+    <string name="equipo_categoria">Categoria</string>
+    <string name="equipo_guardar">Guardar</string>
+    <string name="equipo_eliminar">Eliminar</string>
+    <string name="blank"></string>
+    <string name="agregar_jugador">Agregar</string>
+    <string name="jugador_numero">13</string>
+    <string name="jugador_nombre">Jugador</string>
+    <string name="jugador_posicion">Tabla</string>
+    <string name="partido_marcador">Marcador</string>
+    <string name="partido_equipo_a">Equipo A</string>
+    <string name="partido_equipo_b">Equipo B</string>
+    <string name="partido_marcador_equipoA">0</string>
+    <string name="partido_marcador_equipoB">0</string>
+    <string name="partido_puntos">Puntos</string>
+    <string name="partido_puntos_cantidad">5</string>
+    <string name="mas">+</string>
+    <string name="menos">-</string>
+    <string name="partidos_faltas">Faltas</string>
+    <string name="partidos_bloqueos">Bloqueos</string>
+    <string name="partidos_asistencias">Asistencias</string>
+    <string name="partidos_rebotes">Rebotes</string>
+    <string name="partidos_robos">Robos</string>
+    <string name="partido_vs">VS</string>
+    <string name="partido_agregar">Agregar</string>
+    <string name="partido_buscar">Buscar</string>
+    <string name="jugador_guardar">Guardar</string>
+    <string name="jugador_eliminar">Eliminar</string>
+    <string name="partido_guardar">Guardar</string>
+    <string name="partido_eliminar">Eliminar</string>
+    <string name="partidos_tiros_libres">Tiros 1</string>
+    <string name="partidos_tiros_dos">Tiros 2</string>
+    <string name="partido_tiros_tres">Tiros 3</string>
+    <string-array name="posiciones_array">
+        <item>Ala</item>
+        <item>Poste</item>
+        <item>Tabla</item>
+        <item>Banca</item>
+    </string-array>
+        <string name="email">Email</string>
+</resources>

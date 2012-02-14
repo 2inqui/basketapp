@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_view_partido_jugador_tiros_tres"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/partido_jugador_nombre_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/text_view_partido_numero_jugador"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:text="@string/jugador_numero"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="35dp" />
+
+        <LinearLayout
+            android:id="@+id/jugador_raiting_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/text_view_partido_jugador_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/jugador_nombre"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/text_view_posicion_jugador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/jugador_posicion"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/partido_jugador_puntos_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/partido_puntos"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:width="50dp" />
+
+                <Button
+                    android:id="@+id/btn_substract_puntos"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/menos"
+                    android:textColor="@color/partido_jugador_puntos_add_style" />
+
+                <TextView
+                    android:id="@+id/text_view_partidos_jugador_puntos"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.94"
+                    android:gravity="center|center_horizontal"
+                    android:text="@string/partido_puntos_cantidad"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <Button
+                    android:id="@+id/btn_add_puntos"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/mas" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/partido_jugador_faltas_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" >
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/partidos_faltas"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:width="50dp" />
+
+                <Button
+                    android:id="@+id/btn_substract_faltas"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/menos"
+                    android:textColor="@color/partido_jugador_puntos_add_style" />
+
+                <TextView
+                    android:id="@+id/text_view_partido_jugador_faltas"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.94"
+                    android:gravity="center|center_horizontal"
+                    android:text="@string/partido_puntos_cantidad"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <Button
+                    android:id="@+id/btn_add_faltas"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/mas" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/partidos_jugador_rebotes_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" >
+
+                <TextView
+                    android:id="@+id/TextView04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/partidos_rebotes"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:width="50dp" />
+
+                <Button
+                    android:id="@+id/btn_substract_rebotes"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/menos"
+                    android:textColor="@color/partido_jugador_puntos_add_style" />
+
+                <TextView
+                    android:id="@+id/text_view_partido_jugador_rebotes"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.94"
+                    android:gravity="center|center_horizontal"
+                    android:text="@string/partido_puntos_cantidad"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <Button
+                    android:id="@+id/btn_add_rebotes"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/mas" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/partidos_jugador_bloqueos_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" >
+
+                <TextView
+                    android:id="@+id/TextView06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/partidos_bloqueos"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:width="50dp" />
+
+                <Button
+                    android:id="@+id/btn_substract_bloqueos"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/menos"
+                    android:textColor="@color/partido_jugador_puntos_add_style" />
+
+                <TextView
+                    android:id="@+id/text_view_partido_jugador_bloqueos"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.94"
+                    android:gravity="center|center_horizontal"
+                    android:text="@string/partido_puntos_cantidad"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <Button
+                    android:id="@+id/btn_add_bloqueos"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/mas" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" >
+
+                <TextView
+                    android:id="@+id/TextView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/partidos_robos"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:width="50dp" />
+
+                <Button
+                    android:id="@+id/btn_substract_robos"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/menos"
+                    android:textColor="@color/partido_jugador_puntos_add_style" />
+
+                <TextView
+                    android:id="@+id/text_view_partido_jugador_robos"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.94"
+                    android:gravity="center|center_horizontal"
+                    android:text="@string/partido_puntos_cantidad"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <Button
+                    android:id="@+id/btn_add_robos"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/mas" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" >
+
+                <TextView
+                    android:id="@+id/TextView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/partidos_tiros_libres"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:width="50dp" />
+
+                <Button
+                    android:id="@+id/btn_substract_tiros_uno"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/menos"
+                    android:textColor="@color/partido_jugador_puntos_add_style" />
+
+                <TextView
+                    android:id="@+id/text_view_partido_jugador_tiros_uno"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.94"
+                    android:gravity="center|center_horizontal"
+                    android:text="@string/partido_puntos_cantidad"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <Button
+                    android:id="@+id/btn_add_tiros_uno"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/mas" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" >
+
+                <TextView
+                    android:id="@+id/TextView08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/partidos_tiros_dos"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:width="50dp" />
+
+                <Button
+                    android:id="@+id/btn_substract_tiros_dos"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/menos"
+                    android:textColor="@color/partido_jugador_puntos_add_style" />
+
+                <TextView
+                    android:id="@+id/text_view_partido_jugador_tiros_dos"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.94"
+                    android:gravity="center|center_horizontal"
+                    android:text="@string/partido_puntos_cantidad"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <Button
+                    android:id="@+id/btn_add_tiros_dos"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/mas" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/partido_jugador_tiros_tres_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" >
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/partido_tiros_tres"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:width="50dp" />
+
+                <Button
+                    android:id="@+id/btn_substract_tiros_tres"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/menos"
+                    android:textColor="@color/partido_jugador_puntos_add_style" />
+
+                <TextView
+                    android:id="@+id/text_view_partido_jugador_tirostres"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.94"
+                    android:gravity="center|center_horizontal"
+                    android:text="@string/partido_puntos_cantidad"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <Button
+                    android:id="@+id/btn_add_tiros_tres"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/mas" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" >
+
+                <TextView
+                    android:id="@+id/TextView07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/partidos_asistencias"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:width="50dp" />
+
+                <Button
+                    android:id="@+id/btn_substract_asistencias"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/menos"
+                    android:textColor="@color/partido_jugador_puntos_add_style" />
+
+                <TextView
+                    android:id="@+id/text_view_partido_jugador_asistencias"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.94"
+                    android:gravity="center|center_horizontal"
+                    android:text="@string/partido_puntos_cantidad"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <Button
+                    android:id="@+id/btn_add_asistencias"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.94"
+                    android:text="@string/mas" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

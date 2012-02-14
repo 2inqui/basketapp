@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_jugador_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/jugadores" />
+
+    <Button
+        android:id="@+id/btn_equipo_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_jugador_main"
+        android:layout_alignLeft="@+id/btn_jugador_main"
+        android:layout_alignRight="@+id/btn_jugador_main"
+        android:text="@string/equipo" />
+
+    <Button
+        android:id="@+id/btn_partidos_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_jugador_main"
+        android:layout_alignRight="@+id/btn_jugador_main"
+        android:layout_below="@+id/btn_jugador_main"
+        android:text="@string/partidos" />
+
+</RelativeLayout>

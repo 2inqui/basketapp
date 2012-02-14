@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom|center_horizontal|top"
+    android:orientation="vertical">
+
+<ScrollView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:orientation="vertical">
+  
+ <LinearLayout
+        android:id="@+id/equipo_data_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Fecha"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <DatePicker
+            android:id="@+id/datePicker1"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textViewHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Hora"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+ 
+        
+
+       
+      
+    <TextView
+        android:id="@+id/textView_lugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lugar"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText_lugar"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView_equipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Equipo"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <Spinner
+        android:id="@+id/spinner_equipo"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView_contrincante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contrincante"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <Spinner
+        android:id="@+id/spinner_contrincante"
+        android:layout_width="284dp"
+        android:layout_height="wrap_content" />
+
+  
+    
+
+    
+        <Button
+            android:id="@+id/btn_guardar_partido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/partido_guardar"
+            android:onClick="onGuardar" />
+
+        <Button
+            android:id="@+id/btn_eliminar_partido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onEliminar"
+            android:text="@string/partido_eliminar" />
+ 
+        </LinearLayout>
+     </ScrollView>
+</LinearLayout>

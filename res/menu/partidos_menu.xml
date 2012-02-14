@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/partido_agregar_menu" android:title="@string/partido_agregar"></item>
+    <item android:id="@+id/partido_buscar_menu" android:title="@string/partido_buscar"></item>
+</menu>
